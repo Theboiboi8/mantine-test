@@ -19,6 +19,7 @@ export default function App(props) {
 	const projectName = "Project Name";
 	const dark = colorScheme === 'dark';
 
+	// @ts-ignore
 	return (
 		<>
 			<Head>
@@ -33,7 +34,7 @@ export default function App(props) {
 				<MantineProvider
 					withGlobalStyles
 					withNormalizeCSS
-					theme={{ colorScheme }}
+					theme={{ colorScheme, fontFamily: 'Cera Pro Light', fontSizes: 'normal' }}
 				>
 					<NotificationsProvider>
 						<ModalsProvider>
@@ -50,9 +51,9 @@ export default function App(props) {
 											title="Toggle color scheme"
 										>
 											{dark ? (
-												<ion-icon name="sunny-outline"></ion-icon>
+												<ion-icon name="sunny-outline" />
 											) : (
-												<ion-icon name="moon-outline"></ion-icon>
+												<ion-icon name="moon-outline" />
 											)}
 										</ActionIcon>
 									</Grid.Col>
@@ -71,3 +72,4 @@ export default function App(props) {
 		</>
 	);
 }
+// @ts-ignore

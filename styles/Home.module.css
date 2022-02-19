@@ -2,6 +2,24 @@
     padding: 0 2rem;
 }
 
+.left_to_right {
+    min-height: 31rem;
+    padding: 4rem;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .main {
     min-height: 100vh;
     padding: 4rem 0;
@@ -10,6 +28,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.min_height {
+    min-height: 20rem;
+    min-width: 30.05rem;
 }
 
 .footer {
@@ -113,4 +136,17 @@
         width: 100%;
         flex-direction: column;
     }
+}
+
+@font-face {font-family: 'cera_prolight';
+    src: url('cera_pro_light-webfont.woff2') format('woff2'),
+    url('cera_pro_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cera_pro_light {
+    font-family: 'cera_prolight';
+    font-weight: normal;
+    font-style: normal;
 }
